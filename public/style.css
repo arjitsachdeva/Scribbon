@@ -1,0 +1,283 @@
+html, body {
+	height: 100%;
+	margin: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-weight: 100;
+	
+	background:#EEE ;
+	background:#ffffff url('images/scribbonbg3.png');
+}
+
+.main {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.centered {
+    text-align: center;
+}
+
+.title {
+    font-size: 36pt;
+    padding-top: 100px;
+}
+
+input[type=text] {
+    border: none;
+    outline: none;
+    -webkit-box-shadow:  0px 0px 5px 1px rgba(0, 0, 0, 0.1);   
+    box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+    
+
+.title-field {
+    width: 600px;
+    height: 40px;
+    padding: 5px;
+    line-height: 40px;
+    font-size: 34px;
+    margin-top: 20px;
+}
+
+.big-link {
+    margin-top: 40px;
+}
+
+.big-link a {
+    font-size: 28pt;
+    color: #333 !important;
+}
+
+.big-link a:hover {
+    color: #666;
+}
+
+.toolbox {
+	padding-top: 100px;
+}
+
+.canvas {
+	margin-top: 5px;
+	background: #FFF;
+	-webkit-box-shadow:  0px 0px 5px 1px rgba(0, 0, 0, 0.1);   
+    box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.canvas-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.canvas-modal {
+    display: none;
+    margin-top: 5px;
+    position: absolute;
+    width: 1000px;
+    height: 562px;
+    background: rgba(0,0,0,0.4);
+    color: #FFF;
+    font-size: 12pt;
+    line-height: 562px;
+    text-align: center;
+}
+
+.auth-modal {
+    display: none;
+    margin-top: 5px;
+    position: absolute;
+    width: 1000px;
+    height: 562px;
+    background: rgba(0,0,0,0.4);
+    color: #FFF;
+    font-size: 12pt;
+    text-align: center;
+}
+
+.choose-color {
+    cursor: pointer;
+    display: inline-block;
+	width: 40px;
+	height: 30px;
+	background: #000;
+	-webkit-box-shadow:  0px 0px 5px 1px rgba(0, 0, 0, 0.1);   
+    box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.buttonset {
+    display: inline-block;
+    height: 30px;
+    width: 100px;
+    margin-left: 10px;
+    vertical-align: top;
+    line-height: 30px;
+    -webkit-box-shadow:  0px 0px 5px 1px rgba(0, 0, 0, 0.1);   
+    box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.buttonset-2 {
+    width: 80px;
+}
+
+.buttonset-5 {
+    width: 205px;
+}
+
+.buttonset .button {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-left: 0px;
+    margin-right: -4px;
+}
+
+.button {
+    cursor: pointer;
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    margin-left: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: top;
+    line-height: 30px;
+    background: #F5F5F5;
+    border-right: 1px solid #DDD;
+    -webkit-box-shadow:  0px 0px 5px 1px rgba(0, 0, 0, 0.1);   
+    box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.button-pushed {
+    background: #DDD;
+}
+
+.big-button {
+    color: #333;
+    display: block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background: #F0F0F0;
+}
+
+.button-selected {
+    background: #CCC;
+}
+
+.button-selected:hover {
+    background: #CCC;
+}
+
+.text-button {
+    user-select: none;
+    font-size: 9pt;
+    min-width: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #AAA;
+}
+
+.save-button, .background-button {
+    width: 60px;
+}
+
+.status {
+    display: inline-block;
+    margin-left: 10px;
+    height: 30px;
+    min-width: 100px;
+    vertical-align: top;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-size: 10pt;
+    color: #666;
+}
+
+.chat-button {
+    color: #FFF;
+    background: #618dbd;
+    float: right;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100px;
+}
+
+.chat-button {
+    display: none;
+    position: relative;
+    color: #FFF;
+    background: #618dbd;
+    float: right;
+}
+
+.chat-button:hover {
+    background: #1E6989;
+}
+
+.chat-pane {
+    position: absolute;
+    right: -400px;
+    top: 5px;
+    height: 562px;
+    width: 25%;
+    background: rgba(30, 105, 137,0.7);
+}
+
+.chat-pane-inner {
+    padding: 15px;
+    height: 80%;
+    overflow: scroll;
+}
+
+.chat-item {
+    font-size: 11pt;
+    margin-bottom: 5px;
+    color: #FFF;
+}
+
+.chat-pane-bottom {
+    height: 62px;
+    padding: 10px;
+}
+
+.chat-pane-bottom textarea {
+    margin-top: -2px;
+    margin-left: -1px;
+    width: 96%;
+    height: 55px;
+    border: none;
+    padding: 5px;
+    font-size: 12pt;
+}
+
+.client-list {
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.client-list-item {
+    color: #AAA;
+    font-size: 9pt;
+    text-transform: uppercase;
+    background: #F5F5F5;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+    padding: 4px;
+    padding-right: 6px;
+    margin-right: 6px;
+    border-left: 15px solid #000;
+    -webkit-box-shadow:  0px 0px 5px 1px rgba(0, 0, 0, 0.3);   
+    box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
+    
+
+
+    

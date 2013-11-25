@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+
+
+		<title>NodeCanvas</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link type="text/css" href="http://dev.jtsage.com/cdn/simpledialog/latest/jquery.mobile.simpledialog.min.css" rel="stylesheet" /> 
+	<link type="text/css" href="http://dev.jtsage.com/jQM-DateBox/css/demos.css" rel="stylesheet" /> 
+	
+	<!-- NOTE: Script load order is significant! -->
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	 <script type="text/javascript"> jQuery.noConflict();
+	 jQuery144 = jQuery </script> 
+<script type="text/javascript" src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript" src="http://dev.jtsage.com/cdn/simpledialog/latest/jquery.mobile.simpledialog2.js"></script>
+	<script type="text/javascript" src="http://dev.jtsage.com/jQM-SimpleDialog/demos2/extras.js"></script>
+
+
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.7.2.min.js'></script>
+
+	
+<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+		<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+
+
+    <script src="js/textualizer.js"></script> 
+  
+    <style type="text/css">
+        #txtlzr
+        {
+            font-size: 20px;
+            width: 900px;
+            height: 100px;
+            margin-left: 200px;
+            margin-top: 10px;
+            border: 1px solid red;
+        }
+    </style>
+  
+  <script type="text/javascript"> 
+var txt;
+    $(function() {
+           txt = $('#txtlzr'); 
+          txt.textualizer();
+          txt.textualizer('start');
+    });
+  </script> 
+
+
+
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "27e95978-a82e-475f-a78a-d616758c88a2"});</script>
+
+
+
+<script>
+
+
+
+
+	function tick(){
+		$('#ticker li:first').slideUp( function () { $(this).appendTo($('#ticker')).slideDown(); });
+	}
+	setInterval(function(){ tick () }, 5000);
+
+
+</script>
+
+
+		<script type='text/javascript' src="socket.io/socket.io.js"></script>
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js'></script>
+		<script type='text/javascript' src='shared.js'></script>
+		<script type='text/javascript' src='canvas.js'></script>
+		<script type='text/javascript' src='client.js'></script>
+		<link rel='stylesheet' type='text/css' href='style.css' />
+		<link rel="stylesheet" media="screen" type="text/css" href="css/colorpicker.css" />
+		<script type="text/javascript" src="js/colorpicker.js"></script>
+		<script type="text/javascript" src="interaction.js"></script>
+		<script type="text/javascript" src="misc.js"></script>
+
+
+<img height=90px width=160px src="images/scribbon1.png"/>
+<br>
+
+<img STYLE="position:absolute; LEFT:180px;"  id="circle" src="images/circicon.png"/>
+
+<script>
+    $("#circle").click(function () {
+      $("#txtlzr").slideToggle("slow");
+    });
+</script>
+
+
+
+      
+	</head>
+	<body >
+
+<div data-role="page" data-theme="c" id="blank"> 
+			<div data-role="content" data-theme="c">
+		
+
+	<div id="txtlzr">
+        	<p>Play all your favorite paper games with any number of your friends! Simply add a New Background and get going. </p>
+			<p> Save your image any time, by clicking the 'Snapshot' icon to retreive it.
+			</p>
+			<p>Scribbon also enables you to text chat with your friends while scribbling. Click the 'CHAT' button towards the right.</p>
+			<p>This is an initial beta release. Stay tuned for even more features and interactivity like never before as we take collaboration to the next level. </p>
+        </div> 
+
+
+		<div class='main'>
+
+		
+			
+			
+
+			<div class='toolbox'>
+
+		<script type="text/javascript"> jQuery144(document).ready(function($){ 
+
+
+			var parser = document.createElement('a');
+			parser.href = location.href;
+ 
+			
+			var pathname=parser.pathname; // => "/pathname/"
+			var pathID = pathname.substr(1);
+
+			var doc="http://documentedit.ap01.aws.af.cm/pad/pad.html#"+pathID;
+			    console.log('pathname',doc);
+			$(document).delegate('#openbutton3', 'click', function() {
+					$('<div>').simpledialog2({
+						mode: 'blank',
+						headerText: 'Some Stuff',
+						headerClose: true,
+						width:'750px',
+						height:'750px',
+						blankContent : 
+							'<iframe src="' +doc+ '" width="100%" height="100%" frameborder="0">'+
+							"<a rel='close' data-role='button' href='#'>Close</a>"
+					})
+				})
+});
+			</script>
+
+
+			<a href="#" id="openbutton3" data-role="button">Text Editor</a>
+
+					
+
+		<div class='choose-color'></div>
+                <div class='buttonset buttonset-2'>
+                    <div class='button pen-button' img='res/pen.png'></div>
+                    <div class='button eraser-button' img='res/eraser.png'></div>
+                </div>
+                <div class='buttonset buttonset-5'>
+                    <div class='button size-button' val='1' img='res/size1.png'></div>
+                    <div class='button size-button' val='2' img='res/size2.png'></div>
+                    <div class='button size-button' val='3' img='res/size3.png'></div>
+                    <div class='button size-button' val='4' img='res/size4.png'></div>
+                    <div class='button size-button' val='5' img='res/size5.png'></div>
+                </div>
+                <div class='button background-button' img='res/background.png'></div>
+                <div class='button save-button' img='res/camera.png'></div>
+                <div class='button text-button clear-button'>Clear</div>
+                <div class='status'></div>
+		
+                <div class='button text-button chat-button'>Chat</div>
+			</div>
+            <div class='canvas-container'>
+                <div class='auth-modal'>
+                    <h1>Welcome to <span class='canvas-name'></span>!</h1>
+                    <p>Choose a nickname:</p>
+                    <input type='text' class='title-field nickname' value='' />
+                    <div class='auth-modal-password'>
+                        <p style='margin-top: 40px'>Enter the canvas password:</p>
+                        <input type='password' class='title-field password' value='' />
+                    </div>
+                    <div class='button big-button join-button'>Join!</div>
+                </div>
+                <div class='canvas-modal'>Please wait, loading your canvas...</div>
+		    	<canvas class='canvas' width='1000px' height='562px'></canvas>
+                <div class='chat-pane'>
+                    <div class='chat-pane-inner'>
+                
+                    </div>
+                    <div class='chat-pane-bottom'>
+                        <textarea></textarea>
+                    </div>
+                </div>
+                <div class='client-list'>
+
+                </div>
+            </div>
+		</div>
+</div></div>
+	</body>
+</html>

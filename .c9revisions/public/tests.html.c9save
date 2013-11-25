@@ -1,0 +1,4 @@
+{"ts":1351373215968,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1351373250234,"patch":[[{"diffs":[[1,"<!DOCTYPE html>\n    <head>\n        <title>Javascript Sandbox</title>"]],"start1":0,"start2":0,"length1":0,"length2":68}]],"length":68,"saved":false}
+{"ts":1351373271341,"patch":[[{"diffs":[[0,"dbox</title>"],[1,"\n        <script src='client.js'></script>\n    </head>\n    <body></body>\n</html>"]],"start1":56,"start2":56,"length1":12,"length2":92}]],"length":148,"saved":false}
+{"ts":1351373342417,"patch":[[{"diffs":[[0,"script>\n"],[1,"        <script type='text/javascript' src='http://code.jquery.com/jquery-1.7.2.min.js'></script>\n"],[0,"    </he"]],"start1":103,"start2":103,"length1":16,"length2":114}]],"length":246,"saved":false}

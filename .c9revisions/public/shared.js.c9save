@@ -1,0 +1,4 @@
+{"ts":1351469619440,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1351469662477,"patch":[[{"diffs":[[1,"var SERVER = 'nodecanvas.idreyn.c9.io'; \nvar PORT = 80;\n\n// Makes an ajax request\n\nfunction ajax(method,data,callback) {\n    data.method = method;\n    $.post('/ajax',data,function(d) {\n        if(callback) callback(d);\n    });\n}"]],"start1":0,"start2":0,"length1":0,"length2":228}]],"length":228,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1352659035132,"patch":[[{"diffs":[[0,"R = "],[-1,"'nodecanvas.idreyn.c9.io'; "],[1,"window.location.host;"],[0,"\nvar"]],"start1":9,"start2":9,"length1":35,"length2":29}]],"length":222,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1352883606836,"patch":[[{"diffs":[[0,"callback"],[-1,"("],[1,".call(d,"],[0,"d);\n    "]],"start1":200,"start2":200,"length1":17,"length2":24}]],"length":229,"saved":false}

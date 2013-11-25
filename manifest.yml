@@ -1,0 +1,17 @@
+---
+applications:
+  .:
+    name: Scribbon2
+    framework:
+      name: node
+      info:
+        mem: 128M
+        description: Node.js Application
+        exec: 
+    infra: ap-aws
+    url: ${name}.${target-base}
+    mem: 512M
+    instances: 1
+    services:
+      mydb:
+        type: mysql
