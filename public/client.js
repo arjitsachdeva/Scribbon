@@ -33,27 +33,6 @@ var sock, // Socket object used by socket.io
 1. If the socket disconnects (e.g. due to dropped connection), disconnect() is called
 2. If the room expires (if it's idle for EXPIRE_TIME), roomExpired() is called
 
-==== BUFFER FORMAT ====
-
-This is an example of a buffer object that is sent through the server:
-
-{
-    id: 'q750w-3Fe891',
-    tool: 'pen',
-    color: 'rgb(0,0,0)',
-    size: '3',
-    buffers: [
-        {
-            old: {x: 0.06, y: 0.65},
-            new: {x: 0.07, y: 0.64},
-            mouseDown: true
-        },
-        {
-            new: {x: 0.08, y: 0.63},
-            mouseDown: true
-        }
-    ]
-}
 
 */
 
